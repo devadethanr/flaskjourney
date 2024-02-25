@@ -14,3 +14,5 @@ def register():
     if not request.form.get("name") or request.form.get("sport") not in SPORTS:
         return render_template("failure.html")
     return render_template("success.html")
+
+# https://youtu.be/-aqUek49iL8?si=EhNGo3NdbS2Yk0YJ&t=4649 1:17:29
