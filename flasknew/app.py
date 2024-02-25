@@ -10,10 +10,14 @@ def index():
     # #     name = "World"
     # name = request.args.get("name", "World")
     # return render_template("index.html", name = name)
+    
     if request.method == "POST":
         name = request.form.get("name", "world")
         return render_template("/greet.html", name = name)
     return render_template("index.html")
+
+
+
 
 
 # @app.route("/greet", methods = ["GET","POST"])
@@ -22,3 +26,4 @@ def index():
 #     #.FORMS ARE FOR POST REQUESTS
 #     name = request.form.get("name", "world")
 #     return render_template("/greet.html", name = name)
+
